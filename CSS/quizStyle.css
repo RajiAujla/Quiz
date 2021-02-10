@@ -1,0 +1,114 @@
+body{
+    margin: 30px auto;
+    background-image: url('../Images/quiz_backgroundimage.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#quizForm{    /* for layout of quiz questions */
+    height: 270px;
+    padding: 5px;
+    font-size: large;
+    color: darkgoldenrod;
+}
+
+header{
+    background-color: rgb(218, 153, 132);
+    height: 50px;
+    width: 42%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+header h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin-bottom: 2px;
+    margin:0px;
+    padding: 10px;
+}
+
+main{
+    background-color: white;
+    width: 40%;
+    float: left;
+    margin: 40px;
+    height: 480px;
+    padding: 10px;
+    text-align: center;
+}
+
+main h1{
+    background-color: black;
+    text-align: center;
+    color: wheat;
+}
+
+main h4{
+    text-align: left;
+}
+
+.questionLabel{
+    color:brown;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questionText{ 
+    text-align: center;
+    box-shadow: 0 0 10px cadetblue;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.toatlScore{
+    font-size: 25px;
+    color:rgb(238, 135, 101);
+}
+
+p{
+    font-size: 25px; /* for display errors */
+}
+
+.btn{       /* Button design */
+    border: 2px solid black;
+    cursor: pointer;
+    background-color:deepskyblue;
+    padding: 10px 40px 10px;
+    margin: 2% 0 5% 38%;
+    border-radius: 5%;
+    box-shadow: 0 5px darkslategray;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+
+.btn:active{  /* Button animation on click */
+    transform: translateY(5px);
+}
+
+.btn:hover{
+     background-color:dodgerblue;  /*change color on hover */
+}
+
+.hidden{
+    display: none;   /* To hide all question at begining of quiz */
+}
+
+.radioLabel{
+    font-size: 20px;
+    color: brown;
+    width: 15%;
+    display: inline-block;
+}
+
+
+
+

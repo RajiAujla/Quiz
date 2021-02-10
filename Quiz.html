@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script type="text/javascript" src="Js/quiz.js"></script> <!-- Add java Script file-->
+    <link rel="stylesheet" href="css/quizStyle.css"> <!-- Use of external CSS-->
+
+</head>
+
+<body>
+    <header>
+        <h2>LET'S BEGIN QUIZ</h2>
+    </header>
+
+    <main> 
+        <form id="quizForm" method="GET" onsubmit="return false" action="">
+            <h1>
+                QUIZ
+            </h1>
+            <h4>
+                This quiz will allow you to attempt 5 questions total in which some are mathametics also.
+                You will get 1 mark for each correct answer. You can start the quiz by clicking on start button.
+            </h4>
+
+            <!-- Quiz Starts here-->
+            <div id="beginScreen">
+                <input class="btn" type="button" value="Start Quiz" onclick="beginQuiz();">
+            </div>
+
+            <div id="firstQuestionScreen" class="hidden">
+                <label class="questionLabel" for="firstQuizQuestion">what is 5 + 5?</label>
+                <input type="text" class="questionText" name="firstQuizQuestion" id="firstQuizQuestion">
+                <input type="button" class="btn" onclick="checkFirstQuestion();" value="Next">
+            </div>
+
+            <div id="secondQuestionScreen" class="hidden">
+                <label class="questionLabel" for="secondQuizQuestion">what is the color of sky?</label>
+                <input type="text" class="questionText" name="secondQuizQuestion" id="secondQuizQuestion">
+                <input type="button" class="btn" onclick="checkSecondQuestion();" value="Next">
+            </div>
+
+            <div id="thirdQuestionScreen" class="hidden">
+                <label class="questionLabel">what is the color of mango?</label>
+
+                <input type="radio" value="yellow" name="mangoColor" id="thirdQuizQuestionYellow">
+                <label class="radioLabel">Yellow</label>
+                
+                <input type="radio" value="pink" name="mangoColor" id="thirdQuizQuestionPink">
+                <label class="radioLabel">Pink</label>
+        
+                <input type="button" class="btn" onclick="checkThirdQuestion();" value="Next">
+            </div>
+
+            <div id="fourthQuestionScreen" class="hidden">
+                <label class="questionLabel" for="fourthQuizQuestion">what you use to write on a blackboard?</label> 
+                <input type="text" class="questionText" name="fourthQuizQuestion" id="fourthQuizQuestion">
+                <input type="button" class="btn" onclick="checkFourthQuestion();" value="Next">
+            </div>
+
+            <div id="fifthQuestionScreen" class="hidden">
+                <label class="questionLabel" for="fourthQuizQuestion">what is 10/2?</label> 
+                <input type="text" class="questionText" name="fifthQuizQuestion" id="fifthQuizQuestion">
+                <input type="button" class="btn" onclick="checkFifthQuestion();" value="Next">
+            </div>
+
+            <span id="result"></span><!--for prinit correct/incorrect value -->
+            <label class="toatlScore">
+                Total Score: <span id="total">Not Attempted</span>
+            </label>        
+
+        </form>
+    </main>
+
+</body>
+
+</html>

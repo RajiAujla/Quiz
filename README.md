@@ -4,4 +4,4 @@ Tools used:
 visual code
 
 A quiz application used to check knowleage based on simple questions.
-Developed by using PHP and HTML5
+Developed by using JavaScript and CSS
